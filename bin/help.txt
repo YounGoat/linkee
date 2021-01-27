@@ -1,0 +1,33 @@
+
+NAME
+        linkee - Move target here and leave a symbol link at the original position.
+
+SYNOPSIS
+        linkee --origin <ORIGINAL_PATH> [ --name <LOCAL_NAME> ]
+        linkee <TARGET_PATH> <LOCAL_NAME>
+        # Gather scattered file or directory here.
+
+        linkee --apply [ <LOCAL_NAME> ]
+        # Put a symbol link of the item at its original position.
+
+        linkee --reset [ <LOCAL_NAME> ]
+        # Send the item back to its original position.
+
+        linkee --list
+        # List gathered items.
+
+ARGUMENTS
+        --origin <ORIGINAL_PATH>
+        # Original path.
+
+        --name <LOCAL_NAME>
+        # Name of item.
+
+        --apply [ <LOCAL_NAME> ]
+        # Put a symbol link of the item at its original position.
+        # If <LOCAL_NAME> is ignored, the operation will be applied to all items.
+
+        --reset [ <LOCAL_NAME> ]
+        # Send the item back to its original position.
+        # The item will be removed.
+
