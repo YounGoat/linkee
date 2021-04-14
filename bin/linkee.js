@@ -23,7 +23,7 @@ const MODULE_REQUIRE = 1
 const options = commandos.parse(require('./options'));
 
 if (options.help) {
-    console.log(fs.readFileSync(path.join(__dirname, 'help.txt'), 'utf8'));
+    commandos.man(fs.readFileSync(path.join(__dirname, 'help.txt'), 'utf8'));
     return;
 }
 
